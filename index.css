@@ -1,6 +1,127 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+:root{
+    --primary: #D81E5B;
+    --secondary: #8A4FFF;
+    --grey: #AAA;
+    --light: #EEE;
+    --dark: #131A26;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+body{
+    background-color: var(--light);
+}
+
+main{
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+h1{
+    color: var(--dark);
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.counter{
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.counter-value{
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -0.5rem;
+}
+
+.counter-controls button{
+    margin: 0 0.5rem;
+}
+
+button{
+    appearance: none;
+    background-color: none;
+    border: none;
+    outline: none;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -ms-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+}
+
+button span{
+    display: block;
+    transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -ms-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+}
+
+button[data-action="reset"]{
+    color: #FFF;
+    opacity: 0.5;
+}
+
+button[data-action="reset"]:hover{
+    opacity: 1;
+}
+
+.save{
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save button{
+    color: var(--dark);
+}
+
+button:active{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
